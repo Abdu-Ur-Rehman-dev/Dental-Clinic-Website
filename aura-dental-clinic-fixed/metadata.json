@@ -1,0 +1,6 @@
+{
+  "name": "AURA DENTAL CLINIC — Luxury Cosmetic Dentistry & Smile Architecture",
+  "description": "Ultra-luxury modern dental clinic offering bespoke smile makeovers, laser whitening, digital implants, clear alignment, and AI treatment consultations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-navy: #102A43;
+    --color-sage: #A8C5B5;
+    --color-ivory: #FAF8F4;
+    --color-gold: #C9AA78;
+    --color-gold-light: #E0C79B;
+    --color-charcoal: #27343B;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #FAF8F4;
+    color: #27343B;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9AA78;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #102A43;
+}
+
+/* Glassmorphism */
+.glass-nav {
+  background: rgba(250, 248, 244, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 170, 120, 0.2);
+}
+
+.glass-dark {
+  background: rgba(16, 42, 67, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(201, 170, 120, 0.25);
+}
+
+/* Subtle Shimmer & Gold Gradients */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #C9AA78 0%, #E3C89B 50%, #9B7E4E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #C9AA78 0%, #D4B888 50%, #B2915A 100%);
+}
+
+.navy-gradient-bg {
+  background: linear-gradient(145deg, #102A43 0%, #1B3A5A 60%, #0A1E31 100%);
+}
+
+/* Custom Cursor styles */
+.custom-cursor {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: 9999;
+  transition: transform 0.15s ease-out, opacity 0.15s ease-out;
+}
+
+/* Smooth Image Hover Zoom */
+.img-zoom-container {
+  overflow: hidden;
+}
+.img-zoom-container img {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.img-zoom-container:hover img {
+  transform: scale(1.06);
+}
